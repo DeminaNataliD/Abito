@@ -1,0 +1,86 @@
+.body {
+  font-family: 'Roboto', sans-serif; /*шрифт для всего сайта*/
+  font-size: 14px; /*размер шрифта на всём сайте*/
+  color: #0A143A; /*цвет текста*/
+}
+
+.header {
+ max-width: 1146px; /*максимальная ширина*/
+ margin: auto; /*автоматическое выравнваниие посередине*/
+padding-top: 30px; /*отступ сверху страницы*/ 
+}
+
+.navbar {
+  display: flex; /*делаем гибкий блок*/
+  align-items: center; /* выравниваем по вертикали по центру */
+  justify-content: space-between; /*разбросать элементы по краям*/
+  margin-bottom: 24px;
+}
+
+.navbar-menu {
+  margin-right: auto; /*автоматический отступ справа*/
+}
+
+.menu {
+list-style: none; /*отключаем точки в списке*/
+margin: 0; /*обнуляем внешние отступы*/
+padding-left: 22px; /*внутренний отступ слева*/
+padding-right: 22px; /*внутренний отступ справа*/
+display: flex;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 14px; /*отступ справа ко всем пунктам меню кроме последнего элемента*/
+}
+
+.menu-link {
+  text-decoration: none; /*отключаем подчеркивание ссылок*/
+  color: inherit; /*цвет текста как у родителя*/
+}
+
+.button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 15px; /*внутренние отступы*/
+  cursor: pointer;
+}
+
+.button-link {
+  color: inherit;
+}
+
+.button-primary {
+  background: #256eeb; /*фон*/
+  border-radius: 5px; /*скругление углов*/
+  color: white;
+}
+
+.search-panel {
+  height: 50px;
+  background: #256EEB; /*фон*/
+  border-radius: 5px;
+  display: flex;
+  padding: 3px;
+}
+
+.search-input {
+  flex-grow: 1; /*растягивается на всё свободное место*/
+  background: #FFFFFF;
+  border-radius: 5px;
+  border: none; /*отключаем обводку*/
+  padding-left: 22px;
+  padding-right: 22px;
+} 
+.search-button {
+  background: #256EEB; /*фон*/
+  border: none; /*отключаем обводку*/
+  color: #FFFFFF;
+  padding-left: 20px;
+  padding-right: 17px;
+  display: flex;
+  align-items: center; /*выравнивание по горизонтали по центру*/
+}
+
+.search-button-text {
+  margin-left: 5px;
+}
